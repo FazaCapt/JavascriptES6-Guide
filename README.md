@@ -15,3 +15,11 @@
 ### What do i need to know?
 
 - Some Knowledge of how the internet works, and litle HTML
+
+### Javascript Object
+
+Dog Object:
+
+dog.name = "Buddy";
+dog.breed = "Golden retriver";
+dog.weight = 60;

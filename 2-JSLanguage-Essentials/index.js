@@ -33,28 +33,28 @@ function print1(){
     console.log("A working function");
 }
 
-print1();
+// print1();
 
 // ============= Function (2) ===============
 function print(a){
     console.log(a);
 }
 
-print('Mau ngeprint faza ganteng');
+// print('Mau ngeprint faza ganteng');
 
 // ============= Function (3) ===============
 function print(a, b, c){
     console.log(a + b + c);
 }
 
-print('satu', ' dua', ' tiga');
+// print('satu', ' dua', ' tiga');
 
 // ============= Function (4) ===============
 var print = function(a, b, c){
     console.log(a + b + c);
 }
 
-print('satu', ' dua', ' tiga');
+// print('satu', ' dua', ' tiga');
 
 // ============= Function (4) ===============
 
@@ -63,4 +63,23 @@ var multiply = function(a,b){
 }
 
 var product = multiply(50,30);
-console.log(product);
+// console.log(product);
+
+
+// =========== Object ==================
+
+var dog = {
+    name : "Buddy",
+    age : 2,
+    breed: 'Golden Retriver',
+    weight: 75,
+    // Function dalam function
+    bark: function() {
+        console.log('Gook!')
+    }
+}
+
+// console.log(dog);
+// console.log(dog.name);
+// console.log(dog['breed']);
+dog.bark();
