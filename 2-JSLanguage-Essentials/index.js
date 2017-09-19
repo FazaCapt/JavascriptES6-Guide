@@ -16,4 +16,14 @@ b = a + "World";
 // Operator
 var z = 10 + 4 - 2;
 // * , -, +, /, %
-console.log(z);
+// console.log(z);
+
+
+// ========= Test Case ===========
+function check(){
+    var a = 10;
+    var b = a + 5;
+    return b;
+}
+
+// console.log(check());
