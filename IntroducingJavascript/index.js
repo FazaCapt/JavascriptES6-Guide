@@ -10,3 +10,13 @@ console.log(typeof document);
 // The getElementById Method
 // The innerHTML Property
 document.getElementById('app').innerHTML = 'Javascript Rules';
+
+// =========================================================
+// https://www.w3schools.com/js/js_htmldom_document.asp
+// The HTML DOM Document Object
+// Finding HTML Elements
+// Changing HTML Elements
+// Adding and Deleting Elements
+// Adding Events Handlers
+// Finding HTML Objects
+// ==========================================================
