@@ -27,3 +27,40 @@ function check(){
 }
 
 // console.log(check());
+
+// ============= Function (1) ===============
+function print1(){
+    console.log("A working function");
+}
+
+print1();
+
+// ============= Function (2) ===============
+function print(a){
+    console.log(a);
+}
+
+print('Mau ngeprint faza ganteng');
+
+// ============= Function (3) ===============
+function print(a, b, c){
+    console.log(a + b + c);
+}
+
+print('satu', ' dua', ' tiga');
+
+// ============= Function (4) ===============
+var print = function(a, b, c){
+    console.log(a + b + c);
+}
+
+print('satu', ' dua', ' tiga');
+
+// ============= Function (4) ===============
+
+var multiply = function(a,b){
+    return a * b;
+}
+
+var product = multiply(50,30);
+console.log(product);
