@@ -7,4 +7,6 @@ console.log(document);
 console.log(typeof document);
 
 // Ini adalah bentuk dasar dari Javascript DOM
+// The getElementById Method
+// The innerHTML Property
 document.getElementById('app').innerHTML = 'Javascript Rules';
