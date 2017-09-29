@@ -289,7 +289,7 @@ fruits[fruits.length] = "Kiwi";          // Appends "Kiwi" to fruit
 // var citrus = fruits.slice(2);
 
 // Automatic toString()
-fruits.toString();
+// fruits.toString();
 
 
 // =========== JavaScript Sorting Arrays ===============
@@ -297,7 +297,7 @@ fruits.toString();
 // ===== Sorting an Array
 
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.sort();            // Sorts the elements of fruits alphabet
+// fruits.sort();            // Sorts the elements of fruits alphabet
 
 // ==== Reversing an Array
 
@@ -324,16 +324,16 @@ fruits.sort();            // Sorts the elements of fruits alphabet
 // function(a, b){return a-b}
 
 var points = [40,100, 1, 5, 25, 10];
-document.getElementById('app').innerHTML = points;
+// document.getElementById('app').innerHTML = points;
 
 function myFunction1(){
     points.sort();
-    document.getElementById('app').innerHTML = points;
+    // document.getElementById('app').innerHTML = points;
 }
 
 function myFunction2() {
     points.sort(function(a,b) { return a - b });
-    document.getElementById('app').innerHTML = points;
+    // document.getElementById('app').innerHTML = points;
 }
 
 // ===== Sorting an Array in Random Order
@@ -389,49 +389,49 @@ function myArrayMin(arr) {
 } 
 
 // Sorting Object Arrays
-var cars = [
-    {type:"Volvo", year:2016},
-    {type:"Saab", year:2001},
-    {type:"BMW", year:2010}]; 
+// var cars = [
+//     {type:"Volvo", year:2016},
+//     {type:"Saab", year:2001},
+//     {type:"BMW", year:2010}]; 
 
 
 // cars.sort(function(a, b){return a.year - b.year}); 
 
-displayCars();
+// displayCars();
 
-function myFunction() {
-    cars.sort(function(a, b){return a.year - b.year});
-    displayCars();
-}
+// function myFunction() {
+//     cars.sort(function(a, b){return a.year - b.year});
+//     displayCars();
+// }
 
-function displayCars() {
-  document.getElementById("demo").innerHTML =
-  cars[0].type + " " + cars[0].year + "<br>" +
-  cars[1].type + " " + cars[1].year + "<br>" +
-  cars[2].type + " " + cars[2].year;
-}
+// function displayCars() {
+//   document.getElementById("demo").innerHTML =
+//   cars[0].type + " " + cars[0].year + "<br>" +
+//   cars[1].type + " " + cars[1].year + "<br>" +
+//   cars[2].type + " " + cars[2].year;
+// }
 
-displayCars();
+// displayCars();
 
 // Comparing string properties is a little more complex:
 
-function myFunction() {
-    cars.sort(function(a, b){
-        var x = a.type.toLowerCase();
-        var y = b.type.toLowerCase();
-        if (x < y) {return -1;}
-        if (x > y) {return 1;}
-        return 0;
-    });
-    displayCars();
-}
+// function myFunction() {
+//     cars.sort(function(a, b){
+//         var x = a.type.toLowerCase();
+//         var y = b.type.toLowerCase();
+//         if (x < y) {return -1;}
+//         if (x > y) {return 1;}
+//         return 0;
+//     });
+//     displayCars();
+// }
 
-function displayCars() {
-  document.getElementById("demo").innerHTML =
-  cars[0].type + " " + cars[0].year + "<br>" +
-  cars[1].type + " " + cars[1].year + "<br>" +
-  cars[2].type + " " + cars[2].year;
-}
+// function displayCars() {
+//   document.getElementById("demo").innerHTML =
+//   cars[0].type + " " + cars[0].year + "<br>" +
+//   cars[1].type + " " + cars[1].year + "<br>" +
+//   cars[2].type + " " + cars[2].year;
+// }
 
 
 // ========== Test Case Weighing Buddy (functions and objects) ==========
@@ -447,3 +447,96 @@ function displayCars() {
   
 //   weigh(dog.weight);
   
+
+// ================= Boolean and Comparison Operators ======
+
+var a = true;
+// console.log(a);
+// return true (dan kebalikannya false)
+
+var a = 5 == 5;
+// console.log(a); // true
+
+var b = 5 == 8;
+// console.log(b); //false
+// <, >, <=, >= sama aja
+
+// === Boolean Values
+
+
+// YES / NO
+// ON / OFF
+// TRUE / FALSE
+
+// === The Boolean() Function
+// Boolean(10 > 9)        // returns true 
+// (10 > 9)              // also returns true
+// 10 > 9                // also returns true 
+
+// Everything With a "Real" Value is True
+// 100
+
+// 3.14
+
+// -15
+
+// "Hello"
+
+// "false"
+
+// 7 + 1 + 3.14
+
+// 5 < 6
+
+// Everything Without a "Real" Value is False
+
+// The Boolean value of 0 (zero) is false:
+var x = 0;
+Boolean(x);       // returns false 
+
+// The Boolean value of -0 (minus zero) is false:
+var x = -0;
+Boolean(x);       // returns false 
+
+// The Boolean value of "" (empty string) is false:
+var x = "";
+Boolean(x);       // returns false 
+
+// The Boolean value of undefined is false:
+var x;
+Boolean(x);       // returns false 
+
+// The Boolean value of null is false:
+var x = null;
+Boolean(x);       // returns false 
+
+// The Boolean value of false is (you guessed it) false:
+var x = false;
+Boolean(x);       // returns false 
+
+// The Boolean value of NaN is false:
+var x = 10 / "H";
+Boolean(x);       // returns false 
+
+// ===== Booleans Can be Objects
+
+var x = false;
+var y = new Boolean(false);
+
+// typeof x returns boolean
+// typeof y returns object 
+
+var x = false;             
+var y = new Boolean(false);
+
+// (x == y) is true because x and y have equal values 
+
+var x = false;             
+var y = new Boolean(false);
+
+// (x === y) is false because x and y have different types 
+
+var x = new Boolean(false);             
+var y = new Boolean(false);
+
+// (x == y) is false because objects cannot be compared 
