@@ -1,30 +1,30 @@
 // ============ If statement ======================
 
-if ( 8 > 13 ){
-    console.log('8 is greeter');
-} else {
-    console.log('8 is not greeter');
-}
+// if ( 8 > 13 ){
+//     console.log('8 is greeter');
+// } else {
+//     console.log('8 is not greeter');
+// }
 
 // Kalo dalam stetmentnya tidak ada  else dia tidak akan keluar karena bernilai 'false'
 
-var a = 10;
+// var a = 10;
 
-if ( 7 > a ){
-    console.log('8 is greeter');
-} else if ( 15 > a ){
-    console.log('15 is greeter');
-} else {
-    console.log('8 is not greeter');
-}
+// if ( 7 > a ){
+//     console.log('8 is greeter');
+// } else if ( 15 > a ){
+//     console.log('15 is greeter');
+// } else {
+//     console.log('8 is not greeter');
+// }
 
-var check = function (number) {
-    if (number % 2 == 0) {
-        console.log(number + ' is even');
-    } else {
-        console.log(number + ' is odd');
-    }
-}
+// var check = function (number) {
+//     if (number % 2 == 0) {
+//         console.log(number + ' is even');
+//     } else {
+//         console.log(number + ' is odd');
+//     }
+// }
 
 // check(4);
 // check(7);
@@ -63,8 +63,34 @@ var check = function (number) {
 //     console.log(i)
 // } 
 
-var names = ["Frodo", "Godzila", "Pecy"];
+// var names = ["Frodo", "Godzila", "Pecy"];
 
-for(var i = 0; i < names.length; i++){
+// for(var i = 0; i < names.length; i++){
+//     console.log(names[i]);
+// }
+
+// =============== While loop ===================
+
+var names = ["Frodo", "Godzila", "Pecy"];
+var i = 0;
+
+// while (i < names.length){
+//     console.log(names[i]);
+//     i++ // Kalo tidak ada increment dia akan menulis frodo berulang-ulang
+// }
+
+// ==== Manggunakan do while
+
+// do {
+//     console.log(names[i]);
+//     i++;
+// } 
+// while (i < names.length);
+// while(i < 0);
+
+// === Ini tak akan bisa jalan jika tanpa do
+
+while(i < 0){
     console.log(names[i]);
+    i++;
 }
