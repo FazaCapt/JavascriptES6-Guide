@@ -100,4 +100,13 @@ const addToCart = (item, number) => {
 // console.log(addToCart('shirt', Infinity));
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow
-console.log(addToCart('shirt', Math.pow(5,7)));
+// console.log(addToCart('shirt', Math.pow(5,7)));
+
+// ================ Modules ===============
+
+import { fellowship, total } from './fellowship';
+import { add, multiply } from './math.js';
+
+console.log(add(4,5));
+console.log(multiply(3,6));
+console.log(fellowship, total);
