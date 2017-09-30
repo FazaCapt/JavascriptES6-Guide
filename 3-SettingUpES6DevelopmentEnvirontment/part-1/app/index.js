@@ -1,1 +1,1 @@
-console.log('Hello world from Webpack');
+console.log('Hello world from Webpack and automatic update');
