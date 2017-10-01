@@ -51,4 +51,33 @@ class Calculator {
 // let a = Calculator.multiply(4,5);
 let a = Calculator.add(9,6);
 
-console.log(a);
+// console.log(a);
+
+// ====================== Prototypes ====================
+
+function Wizard (name, house, pet) {
+    this.name = name;
+    this.house = house;
+    this.pet = pet;
+
+    this.greet = () =>`I'm ${this.name} Potter from ${this.house}`
+}
+
+Wizard.prototype.pet_name;
+
+// === Akan error bila pake arrow function
+// Wizard.prototype.info = () => {
+//     return `I have a ${this.pet} named ${this.pet_name}`
+// }
+
+// ==== Ini akan berhasil karena pake function bukan arraw
+Wizard.prototype.info = function () {
+    return `I have a ${this.pet} named ${this.pet_name}`
+}
+
+let harry = new Wizard('Harry porter', 'Grafindor', 'Owl');
+harry.pet_name = "Hedwig";
+
+console.log(harry.info());
+// console.log(harry);
+// console.log(harry.greet());
