@@ -54,7 +54,42 @@ const addSuffix = (x) => {
 const product = x => y => y * x;
 
 let mult5 = product(5);
-console.log(mult5(3));
+// console.log(mult5(3));
 
 let double = product(2);
-console.log(double(9));
+// console.log(double(9));
+
+
+// =========== Private Methode =========
+
+const budget = () => {
+    let balance = 0;
+    let changebal = (val) => {
+        return balance += val;
+    }
+
+    const deposit20 = () => changebal(20);
+    const withDraw20 = () => changebal(-20);
+    const check = () => balance;
+
+    // return {
+    //     deposit20, withDraw20, check
+    // }
+
+    // ====== Cara 1:
+    return {
+        deposit20: deposit20, 
+        withDraw20: withDraw20, 
+        check:check
+    }
+}
+
+let wallet = budget();
+console.log(wallet);
+wallet.deposit20();
+wallet.withDraw20();
+wallet.deposit20();
+// wallet.withDraw20();
+wallet.deposit20();
+console.log(wallet.check());
+// console.log(wallet.balance); //Error, undifined
